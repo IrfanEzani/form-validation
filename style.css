@@ -60,6 +60,7 @@ body {
   font-size: 15px;
   font-family: 'Lato';
   letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
 .img-container {
@@ -70,12 +71,18 @@ body {
   margin: 1rem;
 }
 
+.img-container img {
+  margin-top: 1.5rem;
+}
+
 
 .form {
   background: #fff;
   min-width: 40vw;
 	padding: 50px 40px;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px 0px black;
+
 }
 
 .form h1 {
@@ -174,6 +181,7 @@ cursor: pointer;
   padding: 2.3rem;
   border-radius: 10px;
   box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease all;
 }
 
 .thanks h1 {

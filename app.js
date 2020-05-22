@@ -19,13 +19,13 @@ function check() {
     const pass2Val = password2.value.trim();
 
     if(userVal === "") {
-      setError(username, 'username cannot be blank')
+      setError(username, 'Please fill in the form')
     } else {
       successFor(username)
     }
 
     if(emailVal === '') {
-  setError(email, 'Email cannot be blank');
+  setError(email, 'Please fill in the form');
 } else if (!isEmail(emailVal)) {
   setError(email, 'Not a valid email');
 } else {
@@ -33,7 +33,7 @@ function check() {
 }
 
 if(pass1Val === '') {
-  setError(password, 'Password cannot be blank');
+  setError(password, 'Please fill in in the form');
 } else if (pass1Val.length <= 8) {
   setError(password, "Password must be more than 8 characters")
 } else {
@@ -41,7 +41,7 @@ if(pass1Val === '') {
 }
 
 if(pass2Val === '') {
-  setError(password2, 'This cannot be blank');
+  setError(password2, 'No password detected');
 } else if(pass1Val !== pass2Val) {
   setError(password2, 'Passwords does not match');
 } else{
