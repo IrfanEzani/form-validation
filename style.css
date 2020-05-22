@@ -19,11 +19,14 @@ body {
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex : 50%;
 	background-color: none;
 	overflow: hidden;
 	width: 400px;
 	max-width: 80%;
+  height: 100vh;
 }
 
 .header {
@@ -155,6 +158,50 @@ body {
 
 button:hover {
   background-color: #fff;
-  color: #3f3d56;
+  color: #3f3d55;
 cursor: pointer;
+}
+
+.thanks {
+  min-height: 40vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #e4672f;
+  background-color: #fff;
+  padding: 2.3rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.thanks h1 {
+  margin: 1rem 0;
+  color: black;
+}
+
+.thanks button {
+  margin: 1rem 0;
+  padding: 10px;
+  background: none;
+  outline: none;
+  border: 2px solid pink;
+  border-radius: 10px;
+  transition: 1s ease all;
+}
+
+.thanks button:hover {
+  transform: translateY(-5px);
+  background: pink;
+}
+
+.thanks a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.thanks img {
+  margin: 10px 0;
 }

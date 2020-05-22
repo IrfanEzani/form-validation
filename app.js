@@ -1,3 +1,6 @@
+
+const container = document.querySelector('.container')
+const header = document.querySelector('.header')
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -31,6 +34,8 @@ function check() {
 
 if(pass1Val === '') {
   setError(password, 'Password cannot be blank');
+} else if (pass1Val.length <= 8) {
+  setError(password, "Password must be more than 8 characters")
 } else {
   successFor(password);
 }
@@ -45,6 +50,16 @@ if(pass2Val === '') {
 
 if (emailVal !== "" && userVal !== "" && pass1Val !== "" && pass1Val === pass2Val) {
   console.log('dope');
+  container.innerHTML = "";
+  container.innerHTML = `
+
+  <div class="thanks">
+    <h1>Thank you for signing in.</h1>
+      <button><a href="#">Enroll the course now</a></button>
+
+    <div class="image-container">
+      <img src="thanks.svg" alt="" height="200px">
+    </div>`;
 }
 
 }
